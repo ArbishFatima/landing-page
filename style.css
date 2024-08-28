@@ -1,0 +1,178 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding-left:8% ;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px 0px;
+}
+.logo{
+  width: 50px;
+  cursor: pointer;
+  margin: 30px 0;
+
+}
+
+.bod{
+  border: 1px solid;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+nav ul li a:hover{
+background-color: #8aec8a;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+ 
+
+}
+.col-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+.col-1 h2{
+font-size: 54px;
+}
+.col-1 h4{
+  font-size: 30px;
+  font-weight: 100;
+  color:black;
+  margin: 20px 0 10px;
+}
+.col-1 p{
+font-size: 16px;
+color: #b7b7b7;
+
+}
+.col-1 h4{
+  margin: 30px 0;
+font-size: 20px;
+}
+.hh{
+  width: 190px;
+  height: 70px;
+  border: 0;
+  outline: none;
+  padding: 12px 10px;
+  color: #fff;
+  background: black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+.hh:hover{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller{
+    width: 70%;
+    margin-left: 90px;
+
+}
+.company{
+  display: flex;
+  justify-content: space-evenly ;
+
+}
+.amazon{
+  padding: 60px;
+
+}
+.h1{ 
+  width: 80px;
+  height: 50px;
+  background-color: #8aec8a;
+  outline: none;
+  border-radius: 0%;
+ 
+}
+.headings {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 4rem 0rem 2rem;
+}
+@media only screen and (max-width: 700px){
+  nav ul {
+      width: 100%;
+      background:greenyellow ;
+      position: absolute;
+      top: 75;
+      right: 0;
+      z-index: 2;
+  }
+  nav ul li a{
+      color: #fff;
+  }
+  .menu{
+      display: block;
+  }
+  .row{
+      flex-direction: column-reverse;
+      margin: 50px 0;
+  }
+  .col-2{
+      flex-basis: 100%;
+      margin-bottom: 50px;
+      
+  }
+  .col-2 .controller{
+      width: 77%;
+  }
+  .color-box{
+      transform: translateX(75px);
+  }
+  .col-1{
+      flex-basis: 100%;
+  }
+  .col-1 h2{
+      font-size: 35px;
+  }
+  .col-1 h3{
+    font-size: 15px;
+  }
+  }
